@@ -3,214 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 4: Hall Effect</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Academic Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        h1 {
+            margin-top: 0;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            margin-bottom: 10px;
+        }
+        .section ul {
+            padding-left: 20px;
+        }
+        .section ul li {
+            margin-bottom: 5px;
+        }
+        .section h3 {
+            margin-top: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Lab 4: Hall Effect</h1>
-    
-    <h2>Objective</h2>
-    <ul>
-        <li>To study Hall effect and to determine: (a) Hall voltage \( V_H \) (b) Hall coefficient \( R \)</li>
-        <li>To determine the type of majority carriers i.e. whether the semiconductor crystal is of n-type or p-type.</li>
-        <li>To determine the charge carrier density or carrier concentration per unit volume in the semiconductor crystal</li>
-        <li>To determine the magnitude of Poynting Vector.</li>
-        <li>To determine the Hall angle \( \theta_H \).</li>
-    </ul>
+    <header>
+        <h1>Your Name</h1>
+        <p>Email: youremail@example.com</p>
+        <p>Phone: +1234567890</p>
+        <p>LinkedIn: <a href="#">Your LinkedIn Profile</a></p>
+    </header>
 
-    <h2>Kit Details</h2>
-    <ul>
-        <li>Power supply for electromagnet:
-            <ul>
-                <li>Specifications: 0-20 V, 5 Amps.</li>
-            </ul>
-        </li>
-        <li>Power supply (Constant current source):
-            <ul>
-                <li>Specifications: 0-20 mA</li>
-            </ul>
-        </li>
-        <li>Gauss meter with Hall Probe</li>
-        <li>Semiconductor(Ge single crystal )mounted on a PCB
-            <ul>
-                <li>Specifications:
-                    <ul>
-                        <li>p-type Ge crystal.</li>
-                        <li>Thickness: 0.5 mm</li>
-                        <li>Width: 4 mm</li>
-                        <li>Length: 6mm</li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-        <li>Multimeter for measuring Hall voltage</li>
-        <li>Hall Effect Apparatus consisting of two 500 turns coils.</li>
-    </ul>
-    
-    <div class="box">
-        <p>Block Diagram of Experimental Setup</p>
-        <div class="image-box"></div>
+    <div class="section">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Master of Science in [Your Major]</strong>, [Your University], [Year of Graduation]</li>
+            <li><strong>Bachelor of Science in [Your Major]</strong>, [Your University], [Year of Graduation]</li>
+        </ul>
     </div>
-    
-    <div class="box">
-        <p>PCB</p>
-        <div class="image-box"></div>
+
+    <div class="section">
+        <h2>Research Experience</h2>
+        <h3>Master's Thesis</h3>
+        <ul>
+            <li>[Title of Your Master's Thesis]</li>
+            <li>[Brief Description of Your Research Work]</li>
+            <li>[Name of Your Supervisor/Advisor]</li>
+            <li>[Year of Completion]</li>
+        </ul>
     </div>
-    
-    <h2>Theory</h2>
-    <div class="image-box"></div>
-    <p>Consider the transport equation for a system in both an electric and a magnetic field. We now have</p>
-    <div class="equation">
-        \[ \frac{d\boldsymbol{p}}{dt}=-e(\boldsymbol{E}+\boldsymbol{v}\times\boldsymbol{B})-\frac{\boldsymbol{p}}{\tau} \]
+
+    <div class="section">
+        <h2>Publications</h2>
+        <h3>Journal Articles</h3>
+        <ul>
+            <li>[Title of Your Journal Article]</li>
+            <li>[Journal Name], [Volume], [Issue], [Year], [Pages]</li>
+        </ul>
+        <h3>Conference Papers</h3>
+        <ul>
+            <li>[Title of Your Conference Paper]</li>
+            <li>[Conference Name], [Year], [Pages]</li>
+        </ul>
     </div>
-    <p>Again setting this to zero in steady state, and using \( \boldsymbol{p}=m\boldsymbol{v} \) and \( \boldsymbol{j}=-ne\boldsymbol{v} \),</p>
-    <div class="equation">
-        \[ \boldsymbol{E}=(\frac{1}{ne}\boldsymbol{j}\times\boldsymbol{B}+\frac{m}{ne^2\tau}\boldsymbol{j}) \]
+
+    <div class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>Research Skills</li>
+            <li>Data Analysis</li>
+            <li>Statistical Analysis</li>
+            <li>Programming Languages: [List programming languages]</li>
+        </ul>
     </div>
-    <p>This can be written as</p>
-    <div class="equation">
-        \[ \boldsymbol{E}=\undertilde{\rho}\boldsymbol{J} \]
+
+    <div class="section">
+        <h2>Awards and Honors</h2>
+        <ul>
+            <li>Award Name, Awarding Organization, Year</li>
+            <li>Honor Name, Awarding Organization, Year</li>
+        </ul>
     </div>
-    <p>where \( \undertilde{\rho} \) is 3x3 tensor. And if \( \boldsymbol{B} \) oriented along z direction.</p>
-    <div class="equation">
-        \[ \rho_{xx}=\rho_{yy}=\rho_{zz}=\frac{m}{ne^2\tau} \]
+
+    <div class="section">
+        <h2>References</h2>
+        <p>Available upon request.</p>
     </div>
-    <div class="equation">
-        \[ \rho_{xy}=-\rho_{yx}=\frac{B}{ne} \]
-    </div>
-    <p>All other components are zero.</p>
-    <ul>
-        <li>Hall coefficient is defined as</li>
-    </ul>
-    <div class="equation">
-        \[ R_H=\frac{\rho_{yx}}{|B|}=\frac{-1}{ne}=\frac{V_Ht}{I|B|} \]
-    </div>
-    <p>where \( t \) is thickness of the sample.</p>
-    <ul>
-        <li>Charge carrier density \( n \)</li>
-    </ul>
-    <div class="equation">
-        \[ n=\frac{1}{R_He} \]
-    </div>
-    <ul>
-        <li>Also, mobility of charge carrier \( \mu \) is given by</li>
-    </ul>
-    <div class="equation">
-        \[ \mu=\frac{R_H}{\rho} \]
-    </div>
-    <ul>
-        <li>Poynting Vector \( \boldsymbol{S} \) is given by</li>
-    </ul>
-    <div class="equation">
-        \[ \boldsymbol{S}=\frac{1}{\mu_0}(\boldsymbol{E}\times\boldsymbol{B}) \]
-    </div>
-    <p>Therefore its magnitude is proportional to hall voltage</p>
-    <div class="equation">
-        \[ |\boldsymbol{S}| \propto V_H \]
-    </div>
-    <ul>
-        <li>Hall angle \( \theta_H \) is given by</li>
-    </ul>
-    <div class="equation">
-        \[ \tan(\theta_H)=\frac{E_H}{E_x}=\mu B \]
-    </div>
-    <ul>
-        <li>All equations are written for electron, to obtain equations for positive charge carrier replace \( e \) with \( -e \). This includes metals and semi-conductors with dominant charge carrier.</li>
-        <li>To treat systems with 2 similar density charge carriers, use weighted average of hall coefficients \( R_H=\frac{\sigma_e^2R_e+\sigma_h^2R_h}{(\sigma_e+\sigma_h)^2} \)</li>
-    </ul>
-    
-    <h2>Methodology</h2>
-    <ul>
-        <li>Connect components as shown in figure 1. Switch on Gauss Meter, adjust reading without electromagnet. Set constant current source for semiconductor to 5 mA, keep magnetic field at zero.</li>
-        <li>Ensure zero hall voltage. Adjust zero set carefully.</li>
-        <li>Bring constant current source reading to zero. Switch on electromagnet at 17V, 3.5A.</li>
-        <li>Measure magnetic flux density with Gauss meter at center between pole pieces. Keep pole pieces close but not touching crystal or probe. Magnetic flux density should be over 1500 Gauss.</li>
-        <li>Incrementally vary current through constant current source, record current and hall voltage. Reverse magnetic field direction, record hall voltage for same current values. Record magnitude of hall voltage, take mean for same current value in both direction.</li>
-    </ul>
-    
-    <h2>Data</h2>
-    
-    <h3>Hall Voltage Table</h3>
-    <table>
-        <tr>
-            <th>S.No</th>
-            <th>Current (I) in mA</th>
-            <th>Reading of millivoltmeter (B in one direction)</th>
-            <th>Reading of millivoltmeter (B in reverse direction)</th>
-            <th>Mean Value of \( V_H \) (in mV)</th>
-            <th>\( \frac{V_H}{I} \) (in \( \Omega \))</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>4.17</td>
-            <td>1.9</td>
-            <td>-2.7</td>
-            <td>2.3</td>
-            <td>0.552</td>
-        </tr>
-        <!-- Add the rest of your table rows here -->
-    </table>
-    
-    <p>\( \frac{V_H}{I} = 0.531\pm0.011\Omega \), Mean\(\pm\)stddev</p>
-    
-    <div class="box">
-        <p>\( V_H\ vs\ I \) for resistivity calculation</p>
-        <div class="image-box"></div>
-    </div>
-    
-    <h3>Resistivity Table</h3>
-    <table>
-        <tr>
-            <th>S.No</th>
-            <th>Current(in mA)</th>
-            <th>Voltage \( V_x \) (in mV)</th>
-            <th>\( \rho=\frac{V_xwt}{lI}\  (in\  \Omega m) \)</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>0.14</td>
-            <td>62</td>
-            <td>0.148</td>
-        </tr>
-        <!-- Add the rest of your table rows here -->
-    </table>
-    
-    <div class="box">
-        <p>\( V_x\ vs\ I \) for resistivity calculation</p>
-        <div class="image-box"></div>
-    </div>
-    
-    <p>\( \rho = 0.153\pm0.003\  \Omega m \)</p>
-    
-    <h2>Calculations</h2>
-    
-    <p>\( B=1660\pm1 \ gauss = 0.1660\pm0.0001\  T \)</p>
-    <p>Using eq. (1) \( R_H=\frac{V_Ht}{I|B|}=(1.60\pm0.05)\times10^{-3}\ \Omega mT^{-1} \)</p>
-    <p>Sign of Hall coefficient is positive, so p type majority carrier.</p>
-    <p>Using eq. (2) \( n=\frac{1}{R_He}=(3.9\pm0.1)\times10^{21} \ m^{-3} \)</p>
-    <p>Using eq. (3) \( \mu=\frac{R_H}{\rho}=(1.05\pm0.04)\times10^{-2}\ m^2/s/V \) </p>
-    <p>Using eq. (6) \( \theta_H=0.099\pm0.003 ^o \) </p>
-    <p>Poynting Vector \( \boldsymbol{S}=\frac{1}{\mu_0}(\boldsymbol{E}\times\boldsymbol{B})=\frac{1}{\mu_0}(\frac{V_HB}{w}\hat{i}-\frac{\rho V_H}{R_Hw}\hat{j}) \)</p>
-    
-    <div class="box">
-        <p>Poynting Vector vs Hall Voltage</p>
-        <div class="image-box"></div>
-    </div>
-    
-    <h3>Note on Error Analysis:</h3>
-    <p>Standard deviation is used in calculating error in \( \frac{V_H}{I} \) and \( \rho \). For magnetic field B, and dimensions of sample least count is used as uncertainty. Usual error propagation is used to calculate error on derived quantities.</p>
-    
-    <h2>Sources of Error</h2>
-    <ol>
-        <li>Fluctuating magnetic field throughout the experiment.</li>
-        <li>Using the PCB for longer duration can heat up the semiconductor, causing fluctuations.</li>
-    </ol>
-    
-    <h2>Sources</h2>
-    <ol>
-        <li>Steve Simon, <i>The Oxford Solid State Basics,</i> 2016 First edition Reprinted (with corrections) ed. Oxford: Oxford University Press.</li>
-        <li>Shrivastava, Keshav. (2012). The Quantum Hall Effect. <i>American Journal of Physics - AMER J PHYS.</i> 61.</li>
-    </ol>
-    
 </body>
 </html>
